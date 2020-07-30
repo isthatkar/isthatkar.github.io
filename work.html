@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+	<title>Portfolio page</title>
+	<title>WORK</title>
+</head>
+<body>
+
+	<div class="navigation">
+		<p class="separator">//</p>
+		<a href="index.html" class="nav">Home</a>
+		<p class="separator">//</p>
+		<a href="about.html"class="nav">About</a>
+		<p class="separator">//</p>
+		<a href="work.html"class="nav">Work</a>
+		<p class="separator">//</p>
+		<a href="contact.html"class="nav">Contact</a>
+	</div>
+
+<button type="button" class="openResume" id="open">Click here to see my resume</button>
+	<div class="resumeDiv" id="resume">
+		<img src="resume1.jpg" class="resume" >
+		<img src="resume2.jpg" class="resume">
+	</div>
+	<div class="workContent">
+	<h5 class="down">Or download .docx file here:</h5>
+	<a  download="resume.docx" onclick="window.open('CV.docx')" class="download" >
+		<img src="arrow.png" class="download" > 
+	</a>
+</div>
+
+
+	<script type="text/javascript">
+		var res = document.querySelector(".openResume");
+		var content = document.querySelector(".resumeDiv");
+
+		 res.addEventListener("click", function() {
+   
+    if (content.style.display === "flex") {
+      content.style.display = "none";
+
+    } else {
+      content.style.display = "flex";
+    }
+  });
+			
+
+		
+	</script>
+</body>
+</html>
