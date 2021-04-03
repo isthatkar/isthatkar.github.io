@@ -197,7 +197,8 @@ border-radius: 1000px;
 .modal-content{
 	background-color:rgba(246,106,106,1);
 	border-radius: 25px;
-	width: 500px;
+	width: 120vh;
+	padding:20px;
 	font-family: Bungee;
 	color:yellow;
 	text-shadow:1px 1px black;
