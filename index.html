@@ -1,124 +1,272 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-	<title>Portfolio page</title>
+    <title>Portfolio page</title>
 
 </head>
+
 <body>
-	<div class="home">
-    <div class=HeaderBackground>
-        <h1 class="typewriter">Hello world I am Rugilė</h1>
+    <div class="home">
+        <div class=HeaderBackground>
+            <h1 class="typewriter">Hello world I am Rugilė</h1>
+        </div>
+
+        <div class="buttonLine">
+
+            <button onclick="document.getElementById('aboutSec').scrollIntoView();"
+                class="homePageButton">about</button>
+            <button onclick="document.getElementById('contact').scrollIntoView();"
+                class="homePageButton">contact</button>
+        </div>
     </div>
 
-		<div class="buttonLine">
 
-		<button onclick="document.getElementById('aboutSec').scrollIntoView();" class="homePageButton" >about</button>
-		<button onclick="document.getElementById('contact').scrollIntoView();" class="homePageButton" >contact</button>
-		</div>
-	</div>
+    <div id="aboutSec" class="about">
 
-    
-        <div id="aboutSec" class="about">
+
+        <div class="content">
+            <a>
+                <div class="photo">
+                    <img src="myphoto.jpg" class="myphoto">
+                    <span class="tooltip">That's me:)</span>
+            </a>
+        </div>
+        <div class="aboutButtons">
+
+
+            <button class="AboutButton" id="about">Who am I?</button>
+            <div id="modalAbout" class="modal">
+
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h5>Who am I?</h5>
+                    <p>I am Rugilė Karengaitė. I was born in 2001 January 3dr. I'm based in Kaunas.<br> In 2019 I
+                        started studying software systems at Kaunas University of Technology. <br> Now I work as a
+                        customer success specialist. <br> My main goal now is to become a front-end developer. </p>
+                </div>
+
+            </div>
+            <button class="AboutButton" id="hobbies">My hobbies</button>
+            <div id="modalHobbies" class="modal">
+
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>
+                    <h5>My free time consists of these things:</h5>
+                    <ul>
+                        <li>working out</li>
+                        <li>going to live concerts</li>
+                        <li>traveling</li>
+                        <li>watching youtube videos</li>
+                        <li>nail art</li>
+                        <li>baking</li>
+                        <li>reading books (not so much) </li>
+
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <button class="AboutButton" id="languages">Languages</button>
+            <div id="modalSkills" class="modal">
+
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h5>Languages:</h5>
+
+                    <ol>
+                        <li>Lithuanian - mother tongoue</li>
+                        <li>English - fluent</li>
+                    </ol>
+                    <h5>Computer skills:</h5>
+
+                    <p>I'm good at working with MD Office (MS Excel, Word, PowerPoint...).<br> I have basic experience
+                        in using Photoshop, Android Studio, and AutoCAD<br>I know how to code in C#, Java, HTML and CSS,
+                        basic JavaScript</p>
+
+                    <h5>Personal traits:</h5>
+                    <p>I can work in team and independantly, have a lot of patience, flexible and able to adapt acording
+                        to the circumstances.<br> I'm also responsible and don't like to be late.</p>
+
+                </div>
+
+            </div>
 
         </div>
 
+        <div class="aboutButtons">
+            <button class="AboutButton" id="skills">My skills</button>
+            <div id="modalSkills" class="modal">
 
 
- 
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h5>Languages:</h5>
 
+                    <ol>
+                        <li>Lithuanian - mother tongoue</li>
+                        <li>English - fluent</li>
+                    </ol>
+                    <h5>Computer skills:</h5>
 
+                    <p>I'm good at working with MD Office (MS Excel, Word, PowerPoint...).<br> I have basic experience
+                        in using Photoshop, Android Studio, and AutoCAD<br>I know how to code in C#, Java, HTML and CSS,
+                        basic JavaScript</p>
 
+                    <h5>Personal traits:</h5>
+                    <p>I can work in team and independantly, have a lot of patience, flexible and able to adapt acording
+                        to the circumstances.<br> I'm also responsible and don't like to be late.</p>
 
-        <div class="contacts" id="contact">
-            <h1 class="contact">Don't be shy, contact me</h1>
-            
-            <div class="social">
-                <a class="app" href="https://www.linkedin.com/in/rugilekarengaite" target="_blank" >
-                    <img src="linkedin.png">
-                </a>
-                <a class="app" href="https://www.facebook.com/isthatkar/" target="_blank" >
-                    <img src="facebook.png">
-                </a>
-                <a class="app" href="https://www.instagram.com/rugile.jpg/ "target="_blank" >
-                    <img src="ig.png">
-                </a>
-                
-                <a class="app" href="https://twitter.com/rugilekarengait" target="_blank" >
-                    <img src="twitte.png">
-                </a>
-                <br>
                 </div>
-                <p class="info">Email: rugile.karengaite@gmail.com</p>
-    
+
+            </div>
+            <button class="AboutButton" id="personality">My personality</button>
+            <div id="modalSkills" class="modal">
+
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h5>Languages:</h5>
+
+                    <ol>
+                        <li>Lithuanian - mother tongoue</li>
+                        <li>English - fluent</li>
+                    </ol>
+                    <h5>Computer skills:</h5>
+
+                    <p>I'm good at working with MD Office (MS Excel, Word, PowerPoint...).<br> I have basic experience
+                        in using Photoshop, Android Studio, and AutoCAD<br>I know how to code in C#, Java, HTML and CSS,
+                        basic JavaScript</p>
+
+                    <h5>Personal traits:</h5>
+                    <p>I can work in team and independantly, have a lot of patience, flexible and able to adapt acording
+                        to the circumstances.<br> I'm also responsible and don't like to be late.</p>
+
+                </div>
+
+            </div>
+            <button class="AboutButton" id="facts">5 random facts</button>
+            <div id="modalFacts" class="modal">
+
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h5>5 random facts:</h5>
+                    <ol>
+                        <li>I'm a cat person</li>
+                        <li>I have 4 tattoos</li>
+                        <li>I can lick my elbow</li>
+                        <li>I plan my day around my meals</li>
+                        <li>I do not have an opinion about pineapple on pizza</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="contacts" id="contact">
+        <h1 class="contact">Don't be shy, contact me</h1>
+
+        <div class="social">
+            <a class="app" href="https://www.linkedin.com/in/rugilekarengaite" target="_blank">
+                <img src="linkedin.png">
+            </a>
+            <a class="app" href="https://www.facebook.com/isthatkar/" target="_blank">
+                <img src="facebook.png">
+            </a>
+            <a class="app" href="https://www.instagram.com/rugile.jpg/ " target="_blank">
+                <img src="ig.png">
+            </a>
+
+            <a class="app" href="https://twitter.com/rugilekarengait" target="_blank">
+                <img src="twitte.png">
+            </a>
+            <br>
+        </div>
+        <p class="info">Email: rugile.karengaite@gmail.com</p>
+
     </div>
 
 
 
     <script>
         // Get the modals
-    var modalAbout = document.getElementById("modalAbout");
-    var modalHobbies = document.getElementById("modalHobbies");
-    var modalSkills = document.getElementById("modalSkills");
-    var modalFacts = document.getElementById("modalFacts");
-    // Get the button that opens the modal
-    var btnAbout = document.getElementById("about");
-    var btnHobbies = document.getElementById("hobbies");
-    var btnSkills = document.getElementById("skills");
-    var btnFacts = document.getElementById("facts");
-    
-    // Get the <span> element that closes the modal
-    var span0 = document.getElementsByClassName("close")[0];
-    var span1 = document.getElementsByClassName("close")[1];
-    var span2 = document.getElementsByClassName("close")[2];
-    var span3 = document.getElementsByClassName("close")[3];
-    
-    // When the user clicks on the button, open the modal
-    function OpenModal(button, modal){
-    button.onclick = function() {
-      modal.style.display = "block";
-    }
-    }
-    
-    OpenModal(btnAbout,modalAbout);
-    OpenModal(btnHobbies,modalHobbies);
-    OpenModal(btnSkills,modalSkills);
-    OpenModal(btnFacts,modalFacts);
-    
-    
-    // When the user clicks on <span> (x), close the modal
-    function CloseModal(span,modal){
-        span.onclick = function(){
-            modal.style.display = "none";
+        var modalAbout = document.getElementById("modalAbout");
+        var modalHobbies = document.getElementById("modalHobbies");
+        var modalSkills = document.getElementById("modalSkills");
+        var modalFacts = document.getElementById("modalFacts");
+        // Get the button that opens the modal
+        var btnAbout = document.getElementById("about");
+        var btnHobbies = document.getElementById("hobbies");
+        var btnSkills = document.getElementById("skills");
+        var btnFacts = document.getElementById("facts");
+
+        // Get the <span> element that closes the modal
+        var span0 = document.getElementsByClassName("close")[0];
+        var span1 = document.getElementsByClassName("close")[1];
+        var span2 = document.getElementsByClassName("close")[2];
+        var span3 = document.getElementsByClassName("close")[3];
+
+        // When the user clicks on the button, open the modal
+        function OpenModal(button, modal) {
+            button.onclick = function () {
+                modal.style.display = "block";
+            }
         }
-    }
-    CloseModal(span0,modalAbout);
-    CloseModal(span1,modalHobbies);
-    CloseModal(span2,modalSkills);
-    CloseModal(span3,modalFacts);
-    
-    
-    // When the user clicks anywhere outside of the modal, close it
-    
-    window.onclick = function(event) {
-          if (event.target == modalAbout) {
-             modalAbout.style.display = "none";
-          }
-          if (event.target == modalHobbies) {
-             modalHobbies.style.display = "none";
-          }
-          if (event.target == modalSkills) {
-             modalSkills.style.display = "none";
-          }
-          if (event.target == modalFacts) {
-             modalFacts.style.display = "none";
-          }
-    }
-    
-    
-    
+
+        OpenModal(btnAbout, modalAbout);
+        OpenModal(btnHobbies, modalHobbies);
+        OpenModal(btnSkills, modalSkills);
+        OpenModal(btnFacts, modalFacts);
+
+
+        // When the user clicks on <span> (x), close the modal
+        function CloseModal(span, modal) {
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+        CloseModal(span0, modalAbout);
+        CloseModal(span1, modalHobbies);
+        CloseModal(span2, modalSkills);
+        CloseModal(span3, modalFacts);
+
+
+        // When the user clicks anywhere outside of the modal, close it
+
+        window.onclick = function (event) {
+            if (event.target == modalAbout) {
+                modalAbout.style.display = "none";
+            }
+            if (event.target == modalHobbies) {
+                modalHobbies.style.display = "none";
+            }
+            if (event.target == modalSkills) {
+                modalSkills.style.display = "none";
+            }
+            if (event.target == modalFacts) {
+                modalFacts.style.display = "none";
+            }
+        }
     </script>
 </body>
+
 </html>

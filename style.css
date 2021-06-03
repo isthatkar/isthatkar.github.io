@@ -1,11 +1,11 @@
 body{
 height: 100%;
 margin:0;
-background-image: url("geometric.jpg");
+
 background-size:cover;
 background-position: center center;
 background-attachment: fixed;
-background-color: #e7899a;
+background-color: black;
 }
 
 .HeaderBackground{
@@ -39,21 +39,61 @@ h1{
 	font-family:Bungee;
 	font-weight: 0.5;
 	font-size: 15px;
-	color:rgb(253,255,115);
+	color:rgb(169, 255, 115);
 	text-shadow: 2px 2px black;
 	height:60px;
 	text-align: center;
 	justify-content: center;
 }
-button:hover{
-	text-decoration: underline;
+.homePageButton:hover{
+	text-decoration: underline 1px;
     cursor:pointer;
-	font-size:35px;
-	color: #cd96f0;
+	font-size:38px;
+	color: rgb(115, 239, 255);
 	transition: font-size 1s;
-	text-shadow: 1px 1px #ac65d8;
+	animation: neon .08s ease-in-out infinite alternate;
 
 }
+@keyframes neon {
+	from {
+	  text-shadow:
+	  0 0 6px rgba(202,228,225,0.92),
+	  0 0 30px rgba(202,228,225,0.34),
+	  0 0 12px rgba(30,132,242,0.52),
+	  0 0 21px rgba(30,132,242,0.92),
+	  0 0 34px rgba(30,132,242,0.78),
+	  0 0 54px rgba(30,132,242,0.92);
+	}
+	to {
+	  text-shadow:
+	  0 0 6px rgba(202,228,225,0.98),
+	  0 0 30px rgba(202,228,225,0.42),
+	  0 0 12px rgba(30,132,242,0.58),
+	  0 0 22px rgba(30,132,242,0.84),
+	  0 0 38px rgba(30,132,242,0.88),
+	  0 0 60px rgba(30,132,242,1);
+	}
+  }
+  @keyframes neonBox {
+	from {
+	  box-shadow:
+	  0 0 6px rgba(202,228,225,0.92),
+	  0 0 30px rgba(202,228,225,0.34),
+	  0 0 12px rgba(30,132,242,0.52),
+	  0 0 21px rgba(30,132,242,0.92),
+	  0 0 34px rgba(30,132,242,0.78),
+	  0 0 54px rgba(30,132,242,0.92);
+	}
+	to {
+	  box-shadow:
+	  0 0 6px rgba(202,228,225,0.98),
+	  0 0 30px rgba(202,228,225,0.42),
+	  0 0 12px rgba(30,132,242,0.58),
+	  0 0 22px rgba(30,132,242,0.84),
+	  0 0 38px rgba(30,132,242,0.88),
+	  0 0 60px rgba(30,132,242,1);
+	}
+  }
 button{
 	background-color: transparent;
 }
@@ -78,7 +118,7 @@ button{
 	height:60px;
 	text-align: center;
 	justify-content: center;
-	transition: font-size 2s;
+	transition: font-size 1.5s;
 
 }
 .typewriter{
@@ -98,7 +138,7 @@ button{
     }
 a.nav{
 	padding:5px;
-	font-family:Bungee;
+	font-family:"Courier New";
 	color:#FF7480;
 	font-size: 20px;
 	text-decoration: none;
@@ -107,6 +147,8 @@ a.nav{
 .app:hover{
 	animation:rotation360 1s ;
 	cursor: pointer;
+	box-shadow: 1px 1px 30px 10px rgba(115, 239, 255,0.5);
+	border-radius: 55%;
 
 }
 @keyframes rotation360{
@@ -120,9 +162,9 @@ a.nav{
 
 .myphoto{
 	margin:0px 50px;
-	height:500px;
-	border-radius: 1000px;
-	box-shadow: 1px 1px 25px 10px rgba(246,106,106,0.9);
+	height:400px;
+	border-radius: 50%;
+	animation: neonBox 1s ease-in-out infinite alternate;
 }
 div.photo a{
 	text-decoration: none;
@@ -133,8 +175,8 @@ div.photo a span
 {
 	visibility: hidden;
 	position:absolute;
-	background-color:rgb(246,106,106);
-	color:yellow;
+	background-color:rgb(115, 239, 255);
+	color:black;
 	font-family:Bungee;
 	border-radius: 25px;
 	padding: 5px 5px;
@@ -144,11 +186,11 @@ div.photo a span
   content: "";
   position: absolute;
   top: 72%;
-  left: -11%;
+  left: -10%;
   margin-left: 0px;
   border-width: 14px;
   border-style: solid;
-  border-color: rgb(246,106,106) transparent transparent transparent;
+  border-color: rgb(115, 239, 255) transparent transparent transparent;
   transform: rotate(45deg);
 }
   div.photo a:hover span{
@@ -172,9 +214,13 @@ div.photo a span
 }
 .AboutButton{
 margin-top: 50px;
-margin-bottom: 100px;
+margin-bottom: 50px;
 height:150px;
-border-radius: 1000px;
+border:none;
+color:rgb(169, 255, 115);
+}
+.AboutButton:hover{
+	color: rgb(115, 239, 255);
 }
 .modal {
   display: none;
@@ -186,7 +232,6 @@ border-radius: 1000px;
   height: 100%; 
   overflow: auto; 
   background-color: black; 
-  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content/Box */
@@ -199,7 +244,7 @@ border-radius: 1000px;
 }
 
 .close {
-  color: #006480;
+  color: rgb(115, 239, 255);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -213,20 +258,21 @@ border-radius: 1000px;
   cursor: pointer;
 }
 .modal-content{
-	background-color:rgba(246,106,106,1);
+	background-color:rgb(201, 115, 255);
 	border-radius: 25px;
 	width: 120vh;
+	min-height: 65vh;
 	padding:20px;
-	font-family: Bungee;
-	color:yellow;
+	font-family: "Courier New";
+	color:black;
 	text-shadow:1px 1px black;
 }
 h5{
 	text-align: center;
 	text-shadow: 3px 3px black;
 	font-size: 25px;
-	color:rgb(253, 255, 115);
-	font-family: Bungee;
+	color:rgb(169, 255, 115);
+	font-family: "Courier New";
 }
 .resumeDiv{
 	
@@ -267,7 +313,7 @@ h5{
 	margin: 0;
 }
 .down{
-	color:rgba(255,255,0,0.8);
+	color:rgb(169, 255, 115);
 	text-shadow: 1px 1px black;
 }
 .contacts
@@ -279,10 +325,10 @@ h5{
 	width:100%;
 	}
 .info{
-	font-family: Bungee;
+	font-family: "Courier New";
 	padding: 0;
 	margin:0;
-	color:#C973FF;
+	color:rgb(201, 115, 255);
 	text-shadow: 1px 1px black;
 }
 .social
@@ -292,8 +338,7 @@ h5{
 	border-spacing: 50px;
 }
 .app{
-	padding: 5px;
-	margin:10px;
+	margin: 5px 20px 20px;
 }
 .contact{
 	color:#C973FF;
