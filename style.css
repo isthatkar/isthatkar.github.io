@@ -1,345 +1,362 @@
-body{
-height: 100%;
-margin:0;
+body {
+	height: 100%;
+	margin: 0;
 
-background-size:cover;
-background-position: center center;
-background-attachment: fixed;
-background-color: black;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: black;
 }
 
-.HeaderBackground{
+.HeaderBackground {
 	width: 100%;
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 35vh;
 }
-.home{
-	height:100vh;
-}
-.about{
-	height:150vh;
-}
-h1{
-	white-space: nowrap;
-	 font-family: "Courier New";
-	 font-size:60px;
-	 color:#C973FF;
-	 text-shadow: 1px 2px black;
-	 overflow: hidden;
-	}
 
-.buttonClick{
+.home {
+	height: 100vh;
+}
+
+.about {
+	height: 100vh;
+}
+
+h1 {
+	white-space: nowrap;
+	font-family: "Courier New";
+	font-size: 60px;
+	color: rgb(169, 255, 115);
+	text-shadow: 1px 2px black;
+	overflow: hidden;
+}
+
+.buttonClick {
 	margin-left: 60px;
 	border-radius: 25px;
-	width:170px;
+	width: 170px;
 	background-color: rgba(246, 106, 106, 0.7);
 	border-color: #FF4063;
-	font-family:Bungee;
+	font-family: Bungee;
 	font-weight: 0.5;
 	font-size: 15px;
-	color:rgb(169, 255, 115);
+	color: rgb(169, 255, 115);
 	text-shadow: 2px 2px black;
-	height:60px;
+	height: 60px;
 	text-align: center;
 	justify-content: center;
 }
-.homePageButton:hover{
+
+.homePageButton:hover {
 	text-decoration: underline 1px;
-    cursor:pointer;
-	font-size:38px;
+	cursor: pointer;
+	font-size: 38px;
 	color: rgb(115, 239, 255);
 	transition: font-size 1s;
-	animation: neon .08s ease-in-out infinite alternate;
+	animation: neon 0.2s ease-in-out infinite alternate;
 
 }
+
 @keyframes neon {
 	from {
-	  text-shadow:
-	  0 0 6px rgba(202,228,225,0.92),
-	  0 0 30px rgba(202,228,225,0.34),
-	  0 0 12px rgba(30,132,242,0.52),
-	  0 0 21px rgba(30,132,242,0.92),
-	  0 0 34px rgba(30,132,242,0.78),
-	  0 0 54px rgba(30,132,242,0.92);
+		text-shadow:
+			0 0 6px rgba(202, 228, 225, 0.92),
+			0 0 30px rgba(202, 228, 225, 0.34),
+			0 0 12px rgba(30, 132, 242, 0.52),
+			0 0 21px rgba(30, 132, 242, 0.92),
+			0 0 34px rgba(30, 132, 242, 0.78),
+			0 0 54px rgba(115, 239, 255, 0.80);
 	}
+
 	to {
-	  text-shadow:
-	  0 0 6px rgba(202,228,225,0.98),
-	  0 0 30px rgba(202,228,225,0.42),
-	  0 0 12px rgba(30,132,242,0.58),
-	  0 0 22px rgba(30,132,242,0.84),
-	  0 0 38px rgba(30,132,242,0.88),
-	  0 0 60px rgba(30,132,242,1);
+		text-shadow:
+			0 0 6px rgba(202, 228, 225, 0.98),
+			0 0 30px rgba(202, 228, 225, 0.42),
+			0 0 12px rgba(30, 132, 242, 0.58),
+			0 0 22px rgba(30, 132, 242, 0.84),
+			0 0 38px rgba(30, 132, 242, 0.88),
+			0 0 60px rgba(115, 239, 255, 1);
 	}
-  }
-  @keyframes neonBox {
+}
+
+@keyframes neonBox {
 	from {
-	  box-shadow:
-	  0 0 6px rgba(202,228,225,0.92),
-	  0 0 30px rgba(202,228,225,0.34),
-	  0 0 12px rgba(30,132,242,0.52),
-	  0 0 21px rgba(30,132,242,0.92),
-	  0 0 34px rgba(30,132,242,0.78),
-	  0 0 54px rgba(30,132,242,0.92);
+		box-shadow:
+			0 0 6px rgba(202, 228, 225, 0.92),
+			0 0 30px rgba(202, 228, 225, 0.34),
+			0 0 12px rgba(30, 132, 242, 0.52),
+			0 0 21px rgba(30, 132, 242, 0.92),
+			0 0 34px rgba(30, 132, 242, 0.78),
+			0 0 54px rgba(115, 239, 255, 0.80);
 	}
+
 	to {
-	  box-shadow:
-	  0 0 6px rgba(202,228,225,0.98),
-	  0 0 30px rgba(202,228,225,0.42),
-	  0 0 12px rgba(30,132,242,0.58),
-	  0 0 22px rgba(30,132,242,0.84),
-	  0 0 38px rgba(30,132,242,0.88),
-	  0 0 60px rgba(30,132,242,1);
+		box-shadow:
+			0 0 6px rgba(202, 228, 225, 0.98),
+			0 0 30px rgba(202, 228, 225, 0.42),
+			0 0 12px rgba(30, 132, 242, 0.58),
+			0 0 22px rgba(30, 132, 242, 0.84),
+			0 0 38px rgba(30, 132, 242, 0.88),
+			0 0 60px rgba(115, 239, 255, 1);
 	}
-  }
-button{
+}
+
+button {
 	background-color: transparent;
 }
-.buttonLine{
-    width:100vw;
-	display:flex;
+
+.buttonLine {
+	width: 100vw;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 10vh;
 }
-.homePageButton{
-	border:none;
+
+.homePageButton {
+	border: none;
 	margin-left: 30px;
 	margin-right: 30px;
 	border-radius: 25px;
-	width:170px;
+	width: 170px;
 	background-color: rgba(246, 106, 106, 0);
-	font-family:"Courier New";
+	font-family: "Courier New";
 	font-size: 30px;
-	color:#daa5fc;
+	color: #daa5fc;
 	text-shadow: 1px 1px #ac65d8;
-	height:60px;
+	height: 60px;
 	text-align: center;
 	justify-content: center;
 	transition: font-size 1.5s;
 
 }
-.typewriter{
-	animation: typing 2.5s steps(30,end) 0s 1 normal both;
-         }
-@keyframes typing{
-  from{width: 0;}
-  to{width: 830px;}
+
+.typewriter {
+	animation: typing 2.5s steps(30, end) 0s 1 normal both;
 }
-.navigation{
-	position:sticky;
-	right:0px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-	
-    }
-a.nav{
-	padding:5px;
-	font-family:"Courier New";
-	color:#FF7480;
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 830px;
+	}
+}
+
+.navigation {
+	position: sticky;
+	right: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+
+a.nav {
+	padding: 5px;
+	font-family: "Courier New";
+	color: #FF7480;
 	font-size: 20px;
 	text-decoration: none;
-	text-shadow:1px 1px black;
+	text-shadow: 1px 1px black;
 }
-.app:hover{
-	animation:rotation360 1s ;
+
+.app:hover {
+	animation: rotation360 1s, neonBox 0.3s ease-in-out infinite alternate;
 	cursor: pointer;
-	box-shadow: 1px 1px 30px 10px rgba(115, 239, 255,0.5);
 	border-radius: 55%;
 
 }
-@keyframes rotation360{
-	from{
-		transform:rotate(0deg);
+
+@keyframes rotation360 {
+	from {
+		transform: rotate(0deg);
 	}
-	to{
-       transform:rotate(360deg);
+
+	to {
+		transform: rotate(360deg);
 	}
 }
 
-.myphoto{
-	margin:0px 50px;
-	height:400px;
+.myphoto {
+	margin: 0px 50px;
+	height: 400px;
 	border-radius: 50%;
-	animation: neonBox 1s ease-in-out infinite alternate;
+	animation: neonBox 0.8s ease-in-out infinite alternate;
 }
-div.photo a{
+
+div.photo a {
 	text-decoration: none;
-	cursor:default;
+	cursor: default;
 	font-weight: normal;
 }
-div.photo a span
-{
+
+div.photo a span {
 	visibility: hidden;
-	position:absolute;
-	background-color:rgb(115, 239, 255);
-	color:black;
-	font-family:Bungee;
+	position: absolute;
+	background-color: rgb(115, 239, 255);
+	color: black;
+	font-family: Bungee;
 	border-radius: 25px;
 	padding: 5px 5px;
-	
-  }
-  a .tooltip::after {
-  content: "";
-  position: absolute;
-  top: 72%;
-  left: -10%;
-  margin-left: 0px;
-  border-width: 14px;
-  border-style: solid;
-  border-color: rgb(115, 239, 255) transparent transparent transparent;
-  transform: rotate(45deg);
+
 }
-  div.photo a:hover span{
+
+a .tooltip::after {
+	content: "";
+	position: absolute;
+	top: 72%;
+	left: -10%;
+	margin-left: 0px;
+	border-width: 14px;
+	border-style: solid;
+	border-color: rgb(115, 239, 255) transparent transparent transparent;
+	transform: rotate(45deg);
+}
+
+div.photo a:hover span {
 	visibility: visible;
 }
 
-.content{
+.content {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
-.aboutButtons{
+
+.aboutButtons {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height:90vh;
-	width:80vh;
-}
-.AboutButton{
-margin-top: 50px;
-margin-bottom: 50px;
-height:150px;
-border:none;
-color:rgb(169, 255, 115);
-}
-.AboutButton:hover{
-	color: rgb(115, 239, 255);
-}
-.modal {
-  display: none;
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: black; 
+	height: 90vh;
+	width: 80vh;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto; 
-  padding: 5px;
-  border: 1px solid #888;
-  width: 80%; 
+.AboutButton {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 150px;
+	border: none;
+	color: rgb(169, 255, 115);
+	font-size:30px;
+	transition: font-size 1s;
+
+}
+
+.AboutButton:hover {
+	font-size:70px;
+	color: rgb(115, 239, 255);
+	animation: neon 0.2s ease-in-out infinite alternate;
+	transition: font-size 1s;
+
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
 }
 
 .close {
-  color: rgb(115, 239, 255);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	color: rgb(115, 239, 255);
+	float: right;
+	font-size: 60px;
+	font-weight: bold;
 
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
-.modal-content{
-	background-color:rgb(201, 115, 255);
+
+.modal-content {
+	margin: 5% auto;
+	padding: 20px;
+	background-color: rgb(201, 115, 255);
 	border-radius: 25px;
 	width: 120vh;
 	min-height: 65vh;
-	padding:20px;
+	padding: 20px;
 	font-family: "Courier New";
-	color:black;
-	text-shadow:1px 1px black;
-}
-h5{
+	font-size:20px;
+	color: black;
+	line-height: 30px;
+	text-shadow: 1px 1px black;
 	text-align: center;
-	text-shadow: 3px 3px black;
-	font-size: 25px;
-	color:rgb(169, 255, 115);
-	font-family: "Courier New";
-}
-.resumeDiv{
-	
-	justify-content: center;
-	align-items: center;
-	display: none;
-	
-}
-.resume{
-	padding: 0px 20px;
-	width:600px;
-	height:750px;
-}
-.openResume{
-	width: 100%;
-	justify-content: center;
-	padding:0;
-	margin:0;
-	border-radius: 0;
-	height:80px;
-	font-size:30px;
-}
-.download{
-	height:50px;
-	width:50px;
-	animation: none;
-	padding: 0;
-	margin:0;
 
 }
-.workContent{
-	width: 100%;
-	height:50px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+
+.modalText{
+	margin:auto;
+	list-style-position: inside;
+	min-width: 10px;
+	list-style-type: none;
+}
+
+h4 {
+	text-align: center;
+	text-shadow: 2px 2px black;
+	font-size: 50px;
+	color: rgb(169, 255, 115);
+	font-family: "Courier New";
+	line-height: 60px;
+}
+
+
+.download {
+	height: 50px;
+	width: 50px;
+	animation: none;
 	padding: 0;
 	margin: 0;
+
 }
-.down{
-	color:rgb(169, 255, 115);
-	text-shadow: 1px 1px black;
-}
-.contacts
-{
-	padding-bottom: 80px;
+
+.contacts {
+	padding-bottom: 50px;
 	display: flex;
+	height:40vh;
 	align-items: center;
 	flex-direction: column;
-	width:100%;
-	}
-.info{
+	width: 100%;
+}
+
+.info {
 	font-family: "Courier New";
 	padding: 0;
-	margin:0;
-	color:rgb(201, 115, 255);
+	margin: 0;
+	color: rgb(201, 115, 255);
 	text-shadow: 1px 1px black;
+	font-size:larger;
 }
-.social
-{
+
+.social {
 	display: flex;
 	flex-direction: row;
 	border-spacing: 50px;
 }
-.app{
+
+.app {
 	margin: 5px 20px 20px;
+	height:80px;
 }
-.contact{
-	color:#C973FF;
+
+.contact {
+	color: #C973FF;
 }
