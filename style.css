@@ -5,32 +5,32 @@ background-image: url("geometric.jpg");
 background-size:cover;
 background-position: center center;
 background-attachment: fixed;
-background-color: #FF899F;
+background-color: #e7899a;
 }
 
 .HeaderBackground{
-	 width: 100%;
-	 background-color:rgba(246, 106, 106, 0.5) ;
-	 display:flex;
+	width: 100%;
+	display:flex;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
-	margin-top: 40px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-
+	padding-top: 35vh;
+}
+.home{
+	height:100vh;
+}
+.about{
+	height:150vh;
 }
 h1{
 	white-space: nowrap;
-	 font-family: Bungee;
-	 font-size:50px;
-	 color:rgba(253,255,115,1);
-	 text-shadow: 4px 4px rgba(190,190,180,0.5),
-	              1px 1px black;
+	 font-family: "Courier New";
+	 font-size:60px;
+	 color:#C973FF;
+	 text-shadow: 1px 2px black;
 	 overflow: hidden;
 	}
 
-button{
+.buttonClick{
 	margin-left: 60px;
 	border-radius: 25px;
 	width:170px;
@@ -46,33 +46,55 @@ button{
 	justify-content: center;
 }
 button:hover{
-box-shadow: 1px 1px 25px 10px rgba(246,106,106,0.9);
-background: linear-gradient(120deg,rgba(246,106,106,0.9),transparent,rgba(246,106,106,0.9));
-transition:all 650ms;
-cursor:pointer;
+	text-decoration: underline;
+    cursor:pointer;
+	font-size:35px;
+	color: #cd96f0;
+	transition: font-size 1s;
+	text-shadow: 1px 1px #ac65d8;
+
 }
-
-
+button{
+	background-color: transparent;
+}
 .buttonLine{
-    width:100%;
+    width:100vw;
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height: 70vh;
+	height: 10vh;
+}
+.homePageButton{
+	border:none;
+	margin-left: 30px;
+	margin-right: 30px;
+	border-radius: 25px;
+	width:170px;
+	background-color: rgba(246, 106, 106, 0);
+	font-family:"Courier New";
+	font-size: 30px;
+	color:#daa5fc;
+	text-shadow: 1px 1px #ac65d8;
+	height:60px;
+	text-align: center;
+	justify-content: center;
+	transition: font-size 2s;
 
 }
 .typewriter{
-	animation: typing 3s steps(30,end) 0s 1 normal both;
+	animation: typing 2.5s steps(30,end) 0s 1 normal both;
          }
 @keyframes typing{
   from{width: 0;}
-  to{width: 780px;}
+  to{width: 830px;}
 }
 .navigation{
-	width: 98%;
+	position:sticky;
+	right:0px;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+	
     }
 a.nav{
 	padding:5px;
@@ -82,7 +104,7 @@ a.nav{
 	text-decoration: none;
 	text-shadow:1px 1px black;
 }
-a:hover{
+.app:hover{
 	animation:rotation360 1s ;
 	cursor: pointer;
 
@@ -95,12 +117,9 @@ a:hover{
        transform:rotate(360deg);
 	}
 }
-.separator{
-	font-size:20px;
-	color:#006480;
-	font-weight: bold;
-}
+
 .myphoto{
+	margin:0px 50px;
 	height:500px;
 	border-radius: 1000px;
 	box-shadow: 1px 1px 25px 10px rgba(246,106,106,0.9);
@@ -137,7 +156,6 @@ div.photo a span
 }
 
 .content{
-	height:90vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -177,7 +195,7 @@ border-radius: 1000px;
   margin: 5% auto; 
   padding: 5px;
   border: 1px solid #888;
-  width: 80%; /
+  width: 80%; 
 }
 
 .close {
@@ -254,13 +272,11 @@ h5{
 }
 .contacts
 {
+	padding-bottom: 80px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width:100%;
-	height:80vh;
-
 	}
 .info{
 	font-family: Bungee;

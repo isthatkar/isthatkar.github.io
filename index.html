@@ -1,25 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 	<title>Portfolio page</title>
 
 </head>
 <body>
-	 
+	<div class="home">
     <div class=HeaderBackground>
-        <h1 class="typewriter">HELLO, WORLD, I AM RUGILĖ</h1>
+        <h1 class="typewriter">Hello world I am Rugilė</h1>
     </div>
 
 		<div class="buttonLine">
 
-		<button onclick="document.location='about.html'" >About</button>
-		<button onclick="document.location='work.html'">Work</button>
-		<button onclick="document.location='contact.html'">Contact</button>
+		<button onclick="document.getElementById('aboutSec').scrollIntoView();" class="homePageButton" >about</button>
+		<button onclick="document.getElementById('contact').scrollIntoView();" class="homePageButton" >contact</button>
 		</div>
-	
+	</div>
 
+    
+        <div id="aboutSec" class="about">
+
+        </div>
+
+
+
+ 
+
+
+
+
+        <div class="contacts" id="contact">
+            <h1 class="contact">Don't be shy, contact me</h1>
+            
+            <div class="social">
+                <a class="app" href="https://www.linkedin.com/in/rugilekarengaite" target="_blank" >
+                    <img src="linkedin.png">
+                </a>
+                <a class="app" href="https://www.facebook.com/isthatkar/" target="_blank" >
+                    <img src="facebook.png">
+                </a>
+                <a class="app" href="https://www.instagram.com/rugile.jpg/ "target="_blank" >
+                    <img src="ig.png">
+                </a>
+                
+                <a class="app" href="https://twitter.com/rugilekarengait" target="_blank" >
+                    <img src="twitte.png">
+                </a>
+                <br>
+                </div>
+                <p class="info">Email: rugile.karengaite@gmail.com</p>
+    
+    </div>
+
+
+
+    <script>
+        // Get the modals
+    var modalAbout = document.getElementById("modalAbout");
+    var modalHobbies = document.getElementById("modalHobbies");
+    var modalSkills = document.getElementById("modalSkills");
+    var modalFacts = document.getElementById("modalFacts");
+    // Get the button that opens the modal
+    var btnAbout = document.getElementById("about");
+    var btnHobbies = document.getElementById("hobbies");
+    var btnSkills = document.getElementById("skills");
+    var btnFacts = document.getElementById("facts");
+    
+    // Get the <span> element that closes the modal
+    var span0 = document.getElementsByClassName("close")[0];
+    var span1 = document.getElementsByClassName("close")[1];
+    var span2 = document.getElementsByClassName("close")[2];
+    var span3 = document.getElementsByClassName("close")[3];
+    
+    // When the user clicks on the button, open the modal
+    function OpenModal(button, modal){
+    button.onclick = function() {
+      modal.style.display = "block";
+    }
+    }
+    
+    OpenModal(btnAbout,modalAbout);
+    OpenModal(btnHobbies,modalHobbies);
+    OpenModal(btnSkills,modalSkills);
+    OpenModal(btnFacts,modalFacts);
+    
+    
+    // When the user clicks on <span> (x), close the modal
+    function CloseModal(span,modal){
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+    }
+    CloseModal(span0,modalAbout);
+    CloseModal(span1,modalHobbies);
+    CloseModal(span2,modalSkills);
+    CloseModal(span3,modalFacts);
+    
+    
+    // When the user clicks anywhere outside of the modal, close it
+    
+    window.onclick = function(event) {
+          if (event.target == modalAbout) {
+             modalAbout.style.display = "none";
+          }
+          if (event.target == modalHobbies) {
+             modalHobbies.style.display = "none";
+          }
+          if (event.target == modalSkills) {
+             modalSkills.style.display = "none";
+          }
+          if (event.target == modalFacts) {
+             modalFacts.style.display = "none";
+          }
+    }
+    
+    
+    
+    </script>
 </body>
 </html>
